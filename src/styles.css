@@ -45,7 +45,7 @@ Footer a:hover {
 }
 
 .appear {
-  display: inline block;
+  display: inline-block;
 }
 
 @media (max-width: 960px) {

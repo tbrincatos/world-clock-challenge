@@ -11,14 +11,21 @@ function showNewSelect(event) {
   let southAmericanCountriesElement = document.querySelector(
     "#southAmericanCountries"
   );
+  let countrySelectionElement = document.querySelector(".country-selection");
 
   if (event.target.value === "africa") {
     africanCountriesElement.classList.remove("none");
     africanCountriesElement.classList.add("appear");
   } else if (event.target.value === "asia") {
+    africanCountriesElement.classList.add("none");
+    australianCountriesElement.classList.add("none");
+    europeanCountriesElement.classList.add("none");
+    northAmericanCountriesElement.classList.add("none");
+    southAmericanCountriesElement.classList.add("none");
     asianCountriesElement.classList.remove("none");
     asianCountriesElement.classList.add("appear");
   }
+
   if (event.target.value === "australia-oceania") {
     alert(`Hi Oceania!`);
   }
