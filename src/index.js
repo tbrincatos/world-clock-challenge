@@ -4,7 +4,7 @@ function showNewSelect(event) {
   } else if (event.target.value === "asia") {
     alert(`Hi Asia!`);
   }
-  if (event.target.value === "oceania") {
+  if (event.target.value === "australiaOceania") {
     alert(`Hi Oceania!`);
   }
   if (event.target.value === "europe") {
