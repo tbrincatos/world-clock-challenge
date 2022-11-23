@@ -1,10 +1,28 @@
+body {
+  background-color: #efdefd;
+  font-family: "Poppins", sans-serif;
+  padding-top: 25px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 40px;
+}
+
 h1 {
+  font-size: 36px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 Footer {
   color: black;
   display: block;
+  margin-top: 25px;
   text-align: center;
 }
 
@@ -19,4 +37,17 @@ Footer a:hover {
   color: #f7630c;
   cursor: pointer;
   text-decoration: underline;
+}
+
+@media (max-width: 960px) {
+  body {
+    padding: 12px;
+  }
+  .card {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
 }
