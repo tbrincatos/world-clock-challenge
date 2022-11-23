@@ -1,5 +1,5 @@
 body {
-  background-color: #efdefd;
+  background-color: #f3edf9;
   font-family: "Poppins", sans-serif;
   padding-top: 25px;
 }
@@ -14,7 +14,8 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 40px;
+  letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -34,9 +35,13 @@ Footer a:visited {
 }
 
 Footer a:hover {
-  color: #f7630c;
+  color: #ab6dde;
   cursor: pointer;
   text-decoration: underline;
+}
+
+.none {
+  display: none;
 }
 
 @media (max-width: 960px) {
