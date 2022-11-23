@@ -4,16 +4,16 @@ function showNewSelect(event) {
   } else if (event.target.value === "asia") {
     alert(`Hi Asia!`);
   }
-  if (event.target.value === "australiaOceania") {
+  if (event.target.value === "australia-oceania") {
     alert(`Hi Oceania!`);
   }
   if (event.target.value === "europe") {
     alert(`Hi Europe!`);
   }
-  if (event.target.value === "northAmerica") {
+  if (event.target.value === "north-america") {
     alert(`Hi North America!`);
   }
-  if (event.target.value === "southAmerica") {
+  if (event.target.value === "south-america") {
     alert(`Hi South America!`);
   }
 }
