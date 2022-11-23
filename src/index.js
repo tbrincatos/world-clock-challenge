@@ -20,3 +20,21 @@ function showNewSelect(event) {
 
 let continentSelect = document.querySelector("#continents");
 continentSelect.addEventListener("change", showNewSelect);
+
+/* africa: "Africa/Cairo",
+  "Africa/Dakar",
+  "Africa/Johannesburg",
+  "Africa/Nairobi",
+  "Africa/Niamey";
+  
+  america: "America/Edmonton", "America/Los_Angeles", "America/New_York", "America/Mexico_City", "America/St_Johns"
+  
+  south: "America/Argentina/Buenos_Aires", "America/Belem" "America/Bogota", "America/Caracas", "America/Santiago"
+
+  europe: "
+
+"Europe/Helsinki", "Europe/Istanbul", "Europe/London", "Europe/Paris", "Asia/Tbilisi"
+
+asia : Asia/Bangkok, Asia/Colombo,Asia/Magadan, Asia/Shanghai, Asia/Tokyo
+
+oceania: Pacific/Auckland, Australia/Darwin, Pacific/Fiji, Australia/Perth,  Australia/Sydney*/
