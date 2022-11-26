@@ -17,11 +17,11 @@ function showNewSelect(event) {
     africanCountriesElement.classList.remove("none");
     africanCountriesElement.classList.add("appear");
   } else if (event.target.value === "asia") {
-    africanCountriesElement.classList.add("none");
-    australianCountriesElement.classList.add("none");
-    europeanCountriesElement.classList.add("none");
-    northAmericanCountriesElement.classList.add("none");
-    southAmericanCountriesElement.classList.add("none");
+    africanCountriesElement.classList.remove("appear");
+    australianCountriesElement.classList.remove("appear");
+    europeanCountriesElement.classList.remove("appear");
+    northAmericanCountriesElement.classList.remove("appear");
+    southAmericanCountriesElement.classList.remove("appear");
     asianCountriesElement.classList.remove("none");
     asianCountriesElement.classList.add("appear");
   }

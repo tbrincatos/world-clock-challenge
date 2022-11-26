@@ -20,6 +20,15 @@ h1 {
   text-transform: uppercase;
 }
 
+h3 {
+  margin-bottom: 0;
+}
+
+h6 {
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 0;
+}
+
 Footer {
   color: black;
   display: block;
@@ -40,12 +49,27 @@ Footer a:hover {
   text-decoration: underline;
 }
 
+select {
+  display: block;
+  margin: 25px auto;
+}
+
+.default-cities {
+  padding: 25px;
+}
+
+.default-city-one,
+.default-city-two {
+  display: flex;
+  justify-content: space-between;
+}
+
 .none {
   display: none;
 }
 
 .appear {
-  display: inline-block;
+  display: block;
 }
 
 @media (max-width: 960px) {
