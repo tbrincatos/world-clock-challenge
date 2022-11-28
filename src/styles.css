@@ -53,6 +53,7 @@ select {
   display: block;
   font-size: 18px;
   margin: 25px auto;
+  text-align: center;
 }
 
 .default-cities {
