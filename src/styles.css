@@ -50,9 +50,13 @@ footer a:hover {
 }
 
 select {
+  background-color: #f3edf9;
+  border: 2px solid #ab6dde;
+  border-radius: 8px;
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   margin: 25px auto;
+  padding: 5px 10px;
   text-align: center;
 }
 
