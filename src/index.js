@@ -1,42 +1,49 @@
+function hideSelect(element) {
+  element.classList.remove("appear");
+  element.classList.add("none");
+}
+
+function showSelect(element) {
+  element.classList.add("appear");
+  element.classList.remove("none");
+}
+
 function showNewSelect(event) {
-  let africanCountriesElement = document.querySelector("#africanCountries");
-  let asianCountriesElement = document.querySelector("#asianCountries");
-  let australianCountriesElement = document.querySelector(
-    "#australianCountries"
+  let countrySelectionElement = document.querySelectorAll(
+    ".country-selection select"
   );
-  let europeanCountriesElement = document.querySelector("#europeanCountries");
-  let northAmericanCountriesElement = document.querySelector(
-    "#northAmericanCountries"
-  );
-  let southAmericanCountriesElement = document.querySelector(
-    "#southAmericanCountries"
-  );
-  let countrySelectionElement = document.querySelector(".country-selection");
+
+  countrySelectionElement.forEach(hideSelect);
 
   if (event.target.value === "africa") {
-    africanCountriesElement.classList.remove("none");
-    africanCountriesElement.classList.add("appear");
+    let africanCountriesElement = document.querySelector("#africanCountries");
+    showSelect(africanCountriesElement);
   } else if (event.target.value === "asia") {
-    africanCountriesElement.classList.remove("appear");
-    australianCountriesElement.classList.remove("appear");
-    europeanCountriesElement.classList.remove("appear");
-    northAmericanCountriesElement.classList.remove("appear");
-    southAmericanCountriesElement.classList.remove("appear");
-    asianCountriesElement.classList.remove("none");
-    asianCountriesElement.classList.add("appear");
+    let asianCountriesElement = document.querySelector("#asianCountries");
+    showSelect(asianCountriesElement);
   }
 
   if (event.target.value === "australia-oceania") {
-    alert(`Hi Oceania!`);
+    let australianCountriesElement = document.querySelector(
+      "#australianCountries"
+    );
+    showSelect(australianCountriesElement);
   }
   if (event.target.value === "europe") {
-    alert(`Hi Europe!`);
+    let europeanCountriesElement = document.querySelector("#europeanCountries");
+    showSelect(europeanCountriesElement);
   }
   if (event.target.value === "north-america") {
-    alert(`Hi North America!`);
+    let northAmericanCountriesElement = document.querySelector(
+      "#northAmericanCountries"
+    );
+    showSelect(northAmericanCountriesElement);
   }
   if (event.target.value === "south-america") {
-    alert(`Hi South America!`);
+    let southAmericanCountriesElement = document.querySelector(
+      "#southAmericanCountries"
+    );
+    showSelect(southAmericanCountriesElement);
   }
 }
 
