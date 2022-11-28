@@ -1,5 +1,9 @@
+:root {
+  --primary-color: #54247a;
+}
 body {
   background-color: #f3edf9;
+  color: var(--primary-color);
   font-family: "Poppins", sans-serif;
   padding-top: 25px;
 }
@@ -25,20 +29,20 @@ h3 {
 }
 
 h6 {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(84, 36, 122, 0.7);
   margin-top: 0;
 }
 
 footer {
-  color: black;
+  color: var(--primary-color);
   display: block;
-  margin-top: 25px;
+  margin-top: 50px;
   text-align: center;
 }
 
 footer a,
 footer a:visited {
-  color: black;
+  color: var(--primary-color);
   text-decoration: none;
   transition: all 150ms ease-in-out;
 }
@@ -53,6 +57,7 @@ select {
   background-color: #f3edf9;
   border: 2px solid #ab6dde;
   border-radius: 8px;
+  color: var(--primary-color);
   display: block;
   font-size: 16px;
   margin: 25px auto;
@@ -83,10 +88,14 @@ select {
     padding: 12px;
   }
   .card {
-    padding: 20px;
+    padding: 15px;
   }
 
   h1 {
     font-size: 32px;
+  }
+
+  select {
+    font-size: 14px;
   }
 }
