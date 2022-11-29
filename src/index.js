@@ -1,3 +1,13 @@
+function onLoad() {
+  let cityOneElement = document.querySelector("#cityOne");
+  let cityOneDateElement = document.querySelector("#cityOneDate");
+  let cityOneTimeElement = document.querySelector("#cityOneTime");
+  cityOneDateElement.innerHTML = moment()
+    .tz("Europe/Paris")
+    .format("ddd Do MMM YYYY");
+  cityOneTimeElement.innerHTML = moment().tz("Europe/Paris").format("HH:mm:ss");
+}
+
 function hideSelect(element) {
   element.classList.remove("appear");
   element.classList.add("none");
@@ -49,6 +59,9 @@ function showNewSelect(event) {
 
 let continentSelect = document.querySelector("#continents");
 continentSelect.addEventListener("change", showNewSelect);
+
+onLoad();
+setInterval(onLoad, 1000);
 
 /* africa: "Africa/Cairo",
   "Africa/Dakar",
