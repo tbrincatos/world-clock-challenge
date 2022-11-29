@@ -38,7 +38,7 @@ h4 {
 
 h6 {
   color: rgba(84, 36, 122, 0.7);
-  margin: 0;
+  margin: 0 0 25px;
 }
 
 footer {
@@ -85,11 +85,15 @@ select {
   padding: 25px;
 }
 
-.default-city-one,
-.default-city-two {
+.default-city {
+  border-bottom: 1px dashed lightgray;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+}
+
+.default-city:last-child {
+  border-bottom: none;
 }
 
 @media (max-width: 960px) {
