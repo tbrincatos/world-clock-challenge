@@ -21,6 +21,7 @@ body {
 h1 {
   font-size: 40px;
   letter-spacing: 2px;
+  margin-bottom: 50px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -86,20 +87,19 @@ select {
 }
 
 .default-city {
-  border-bottom: 1px dashed lightgray;
+  border-bottom: 1px dashed var(--primary-color);
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .default-city:last-child {
   border-bottom: none;
-  margin-bottom: 0;
 }
 
 @media (max-width: 960px) {
   body {
-    padding: 12px;
+    padding: 20px;
   }
 
   .card {
@@ -121,5 +121,9 @@ select {
 
   select {
     font-size: 14px;
+  }
+
+  .default-city {
+    justify-content: space-around;
   }
 }

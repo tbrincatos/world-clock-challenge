@@ -2,9 +2,9 @@ function onLoad(value) {
   let cityOneElement = document.querySelector("#cityOne");
   let cityOneDateElement = document.querySelector("#cityOneDate");
   let cityOneTimeElement = document.querySelector("#cityOneTime");
-  cityOneElement.innerHTML = value.replace("_", " ").split("/")[1];
+  cityOneElement.innerHTML = value.replace("_", " ").split("/").pop();
   cityOneDateElement.innerHTML = moment().tz(value).format("ddd Do MMM YYYY");
-  cityOneTimeElement.innerHTML = moment().tz(value).format("HH:mm:ss");
+  cityOneTimeElement.innerHTML = moment().tz(value).format("HH:mm");
 }
 
 function hideSelect(element) {
