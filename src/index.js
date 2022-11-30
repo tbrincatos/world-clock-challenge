@@ -1,11 +1,10 @@
-function onLoad() {
+function onLoad(value) {
   let cityOneElement = document.querySelector("#cityOne");
   let cityOneDateElement = document.querySelector("#cityOneDate");
   let cityOneTimeElement = document.querySelector("#cityOneTime");
-  cityOneDateElement.innerHTML = moment()
-    .tz("Europe/Paris")
-    .format("ddd Do MMM YYYY");
-  cityOneTimeElement.innerHTML = moment().tz("Europe/Paris").format("HH:mm:ss");
+  cityOneElement.innerHTML = value.replace("_", " ").split("/")[1];
+  cityOneDateElement.innerHTML = moment().tz(value).format("ddd Do MMM YYYY");
+  cityOneTimeElement.innerHTML = moment().tz(value).format("HH:mm:ss");
 }
 
 function hideSelect(element) {
@@ -32,7 +31,6 @@ function showNewSelect(event) {
     let asianCountriesElement = document.querySelector("#asianCountries");
     showSelect(asianCountriesElement);
   }
-
   if (event.target.value === "australia-oceania") {
     let australianCountriesElement = document.querySelector(
       "#australianCountries"
@@ -57,26 +55,34 @@ function showNewSelect(event) {
   }
 }
 
+function showNewCityTime(event) {
+  let value = event.target.value;
+  onLoad(value);
+}
+
 let continentSelect = document.querySelector("#continents");
 continentSelect.addEventListener("change", showNewSelect);
 
-onLoad();
-setInterval(onLoad, 1000);
+let africanCountriesElement = document.querySelector("#africanCountries");
+africanCountriesElement.addEventListener("change", showNewCityTime);
 
-/* africa: "Africa/Cairo",
-  "Africa/Dakar",
-  "Africa/Johannesburg",
-  "Africa/Nairobi",
-  "Africa/Niamey";
-  
-  america: "America/Edmonton", "America/Los_Angeles", "America/New_York", "America/Mexico_City", "America/St_Johns"
-  
-  south: "America/Argentina/Buenos_Aires", "America/Belem" "America/Bogota", "America/Caracas", "America/Santiago"
+let asianCountriesElement = document.querySelector("#asianCountries");
+asianCountriesElement.addEventListener("change", showNewCityTime);
 
-  europe: "
+let australianCountriesElement = document.querySelector("#australianCountries");
+australianCountriesElement.addEventListener("change", showNewCityTime);
 
-"Europe/Helsinki", "Europe/Istanbul", "Europe/London", "Europe/Paris", "Asia/Tbilisi"
+let europeanCountriesElement = document.querySelector("#europeanCountries");
+europeanCountriesElement.addEventListener("change", showNewCityTime);
 
-asia : Asia/Bangkok, Asia/Colombo,Asia/Magadan, Asia/Shanghai, Asia/Tokyo
+let northAmericanCountriesElement = document.querySelector(
+  "#northAmericanCountries"
+);
+northAmericanCountriesElement.addEventListener("change", showNewCityTime);
 
-oceania: Pacific/Auckland, Australia/Darwin, Pacific/Fiji, Australia/Perth,  Australia/Sydney*/
+let southAmericanCountriesElement = document.querySelector(
+  "#southAmericanCountries"
+);
+southAmericanCountriesElement.addEventListener("change", showNewCityTime);
+
+onLoad("Europe/Paris");
