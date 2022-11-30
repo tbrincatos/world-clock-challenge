@@ -1,3 +1,8 @@
+function showCurrentTime(event) {
+  let showCurrentTimeElement = document.querySelector("#currentTime");
+  showCurrentTimeElement.innerHTML = moment().format("HH:mm");
+}
+
 function onLoad(value) {
   let cityOneElement = document.querySelector("#cityOne");
   let cityOneDateElement = document.querySelector("#cityOneDate");
@@ -60,6 +65,9 @@ function showNewCityTime(event) {
   onLoad(value);
 }
 
+let currentTimeElement = document.querySelector("#currentTime");
+currentTimeElement.addEventListener("click", showCurrentTime);
+
 let continentSelect = document.querySelector("#continents");
 continentSelect.addEventListener("change", showNewSelect);
 
@@ -84,13 +92,5 @@ let southAmericanCountriesElement = document.querySelector(
   "#southAmericanCountries"
 );
 southAmericanCountriesElement.addEventListener("change", showNewCityTime);
-
-function showCurrentTime(event) {
-  let showCurrentTimeElement = document.querySelector("#currentTime");
-  showCurrentTimeElement.innerHTML = moment().format("HH:mm");
-}
-
-let currentTimeElement = document.querySelector("#currentTime");
-currentTimeElement.addEventListener("click", showCurrentTime);
 
 onLoad("Europe/Paris");
