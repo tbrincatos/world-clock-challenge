@@ -85,4 +85,12 @@ let southAmericanCountriesElement = document.querySelector(
 );
 southAmericanCountriesElement.addEventListener("change", showNewCityTime);
 
+function showCurrentTime(event) {
+  let showCurrentTimeElement = document.querySelector("#currentTime");
+  showCurrentTimeElement.innerHTML = moment().format("HH:mm");
+}
+
+let currentTimeElement = document.querySelector("#currentTime");
+currentTimeElement.addEventListener("click", showCurrentTime);
+
 onLoad("Europe/Paris");

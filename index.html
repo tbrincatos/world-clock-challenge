@@ -24,81 +24,88 @@
       <header>
         <h1>World Clock</h1>
       </header>
+      <div class="current">
+        <button id="currentTime" title="Get time">Get my current time</button>
 
-      <div class="continent-selection">
-        <select name="continent" id="continents">
-          <option value="">Select a continent</option>
-          <option value="africa">Africa</option>
-          <option value="asia">Asia</option>
-          <option value="australia-oceania">Australia/Oceania</option>
-          <option value="europe">Europe</option>
-          <option value="north-america">North America</option>
-          <option value="south-america">South America</option>
-        </select>
-      </div>
+        <span class="continent-selection">
+          <select name="continent" id="continents">
+            <option value="">Select a continent</option>
+            <option value="africa">Africa</option>
+            <option value="asia">Asia</option>
+            <option value="australia-oceania">Australia/Oceania</option>
+            <option value="europe">Europe</option>
+            <option value="north-america">North America</option>
+            <option value="south-america">South America</option>
+          </select>
+        </span>
 
-      <div class="country-selection">
-        <select name="africanCountry" id="africanCountries" class="none">
-          <option value="">Select a country</option>
-          <option value="Africa/Cairo">Cairo</option>
-          <option value="Africa/Dakar">Dakar</option>
-          <option value="Africa/Johannesburg">Johannesburg</option>
-          <option value="Africa/Nairobi">Nairobi</option>
-          <option value="Africa/Niamey">Niamey</option>
-        </select>
+        <span class="country-selection">
+          <select name="africanCountry" id="africanCountries" class="none">
+            <option value="">Select a country</option>
+            <option value="Africa/Cairo">Cairo</option>
+            <option value="Africa/Dakar">Dakar</option>
+            <option value="Africa/Johannesburg">Johannesburg</option>
+            <option value="Africa/Nairobi">Nairobi</option>
+            <option value="Africa/Niamey">Niamey</option>
+          </select>
 
-        <select name="asianCountry" id="asianCountries" class="none">
-          <option value="">Select a country</option>
-          <option value="Asia/Bangkok">Bangkok</option>
-          <option value="Asia/Colombo">Colombo</option>
-          <option value="Asia/Magadan">Magadan</option>
-          <option value="Asia/Shanghai">Shanghai</option>
-          <option value="Asia/Tokyo">Tokyo</option>
-        </select>
+          <select name="asianCountry" id="asianCountries" class="none">
+            <option value="">Select a country</option>
+            <option value="Asia/Bangkok">Bangkok</option>
+            <option value="Asia/Colombo">Colombo</option>
+            <option value="Asia/Magadan">Magadan</option>
+            <option value="Asia/Shanghai">Shanghai</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+          </select>
 
-        <select name="australianCountry" id="australianCountries" class="none">
-          <option value="">Select a country</option>
-          <option value="Pacific/Auckland">Auckland</option>
-          <option value="Australia/Darwin">Darwin</option>
-          <option value="Pacific/Fiji">Fiji</option>
-          <option value="Australia/Perth">Perth</option>
-          <option value="Australia/Sydney">Sydney</option>
-        </select>
+          <select
+            name="australianCountry"
+            id="australianCountries"
+            class="none"
+          >
+            <option value="">Select a country</option>
+            <option value="Pacific/Auckland">Auckland</option>
+            <option value="Australia/Darwin">Darwin</option>
+            <option value="Pacific/Fiji">Fiji</option>
+            <option value="Australia/Perth">Perth</option>
+            <option value="Australia/Sydney">Sydney</option>
+          </select>
 
-        <select name="europeanCountry" id="europeanCountries" class="none">
-          <option value="">Select a country</option>
-          <option value="Europe/Helsinki">Helsinki</option>
-          <option value="Europe/Istanbul">Istanbul</option>
-          <option value="Europe/London">London</option>
-          <option value="Europe/Paris">Paris</option>
-          <option value="Asia/Tbilisi">Tbilisi</option>
-        </select>
+          <select name="europeanCountry" id="europeanCountries" class="none">
+            <option value="">Select a country</option>
+            <option value="Europe/Helsinki">Helsinki</option>
+            <option value="Europe/Istanbul">Istanbul</option>
+            <option value="Europe/London">London</option>
+            <option value="Europe/Paris">Paris</option>
+            <option value="Asia/Tbilisi">Tbilisi</option>
+          </select>
 
-        <select
-          name="northAmericanCountry"
-          id="northAmericanCountries"
-          class="none"
-        >
-          <option value="">Select a country</option>
-          <option value="America/Edmonton">Edmonton</option>
-          <option value="America/Los_Angeles">Los Angeles</option>
-          <option value="America/Mexico_City">Mexico City</option>
-          <option value="America/New_York">New York</option>
-          <option value="America/St_Johns">St Johns</option>
-        </select>
+          <select
+            name="northAmericanCountry"
+            id="northAmericanCountries"
+            class="none"
+          >
+            <option value="">Select a country</option>
+            <option value="America/Edmonton">Edmonton</option>
+            <option value="America/Los_Angeles">Los Angeles</option>
+            <option value="America/Mexico_City">Mexico City</option>
+            <option value="America/New_York">New York</option>
+            <option value="America/St_Johns">St Johns</option>
+          </select>
 
-        <select
-          name="southAmericanCountry"
-          id="southAmericanCountries"
-          class="none"
-        >
-          <option value="">Select a country</option>
-          <option value="America/Belem">Belem</option>
-          <option value="America/Bogota">Bogota</option>
-          <option value="America/Argentina/Buenos_Aires">Buenos Aires</option>
-          <option value="America/Caracas">Caracas</option>
-          <option value="America/Santiago">Santiago</option>
-        </select>
+          <select
+            name="southAmericanCountry"
+            id="southAmericanCountries"
+            class="none"
+          >
+            <option value="">Select a country</option>
+            <option value="America/Belem">Belem</option>
+            <option value="America/Bogota">Bogota</option>
+            <option value="America/Argentina/Buenos_Aires">Buenos Aires</option>
+            <option value="America/Caracas">Caracas</option>
+            <option value="America/Santiago">Santiago</option>
+          </select>
+        </span>
       </div>
       <div class="default-cities">
         <div class="default-city">
