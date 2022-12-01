@@ -46,6 +46,26 @@ select:hover {
   cursor: pointer;
 }
 
+footer {
+  color: var(--primary-color);
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer a,
+footer a:visited {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+footer a:hover {
+  color: #ab6dde;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 h1 {
   font-size: 60px;
   letter-spacing: 2px;
@@ -68,26 +88,6 @@ h4 {
 h6 {
   color: rgba(84, 36, 122, 0.7);
   margin: 0 0 25px;
-}
-
-footer {
-  color: var(--primary-color);
-  display: block;
-  margin-top: 50px;
-  text-align: center;
-}
-
-footer a,
-footer a:visited {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: all 150ms ease-in-out;
-}
-
-footer a:hover {
-  color: #ab6dde;
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 .none {
@@ -119,6 +119,11 @@ footer a:hover {
     padding: 20px;
   }
 
+  button,
+  select {
+    font-size: 14px;
+  }
+
   .card {
     padding: 15px;
   }
@@ -126,6 +131,10 @@ footer a:hover {
   .current {
     grid-template-columns: 1fr;
     grid-row-gap: 20px;
+  }
+
+  .default-city {
+    justify-content: space-around;
   }
 
   h1 {
@@ -139,14 +148,5 @@ footer a:hover {
   h4 {
     font-size: 24px;
     line-height: 36px;
-  }
-
-  button,
-  select {
-    font-size: 14px;
-  }
-
-  .default-city {
-    justify-content: space-around;
   }
 }
