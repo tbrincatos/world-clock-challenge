@@ -141,6 +141,7 @@ footer a:hover {
     line-height: 36px;
   }
 
+  button,
   select {
     font-size: 14px;
   }
